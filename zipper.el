@@ -225,7 +225,7 @@ without moving."
 (defun zipper-replace (loc n)
   "Replaces the node at this LOC with node N, without moving."
   (with-zipper-loc loc
-    (zipper-make-loc n path)))
+    (zipper--make-loc n path)))
 
 (defun zipper-edit (loc f &rest args)
   "Replaces the node at this LOC with the value of (f node args)."
